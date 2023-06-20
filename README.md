@@ -4,6 +4,12 @@ Chrome OS allows managed users to login to their accounts on a device level with
 
 ## Setting up SAML
 
+In the ForgeRock tenant, set up a remote SP with Google and hosted IDP. Docs for setting up a hosted IDP and remote SP can be found [here](https://backstage.forgerock.com/docs/idcloud-am/latest/saml2-guide/saml2-providers-and-cots.html). 
+
+Once it is created, get the IDP initiated url. It should look some like this: https://<am-url>/idpssoinit?metaAlias=<idp meta alias>&spEntityID=<sp entity id>
+
+In the google admin tenant, go to security -> authentication, SSO with third party IDP. Enable it, and copy the IDP initiated URL as the sign in URL.
+
 
 ## Setting up a service account
 
@@ -11,7 +17,7 @@ A service account will need to be created and set up in google. Steps for that c
 
 After a service account is created and a key is added, a json file will be downloaded containing information about the service account. This information will need to be added as ESVs in the ForgeRock environment: https://backstage.forgerock.com/docs/idcloud/latest/tenants/esvs.html. 
 
-## Automatic provision of usernames to google
+## Automatic provisioning of usernames to google
 
 Users can be automatically provisioned from ForgeRock to Google using the Google directory api: https://developers.google.com/admin-sdk/directory/reference/rest/v1/users/insert. This can be done through a ForgeRock IDM on create script. This script will be triggered every time a user is created to also create the user in Google. To do so, here are the following steps:
 
