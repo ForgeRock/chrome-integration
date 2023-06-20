@@ -10,7 +10,7 @@ Once it is created, you will be able to use an IDP initiated URL in this format 
 
 In the google admin tenant, go to security -> authentication, SSO with third party IDP. Enable it, and copy the IDP initiated URL as the sign in URL.
 
-After setting up SAML, users can leverate authentication journeys in their flow. 
+After setting up SAML, users can leverage authentication journeys in their flow. 
 
 
 ## Setting up a service account
