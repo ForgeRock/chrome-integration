@@ -6,7 +6,7 @@ Chrome OS allows managed users to login to their accounts on a device level with
 
 In the ForgeRock tenant, set up a remote SP with Google and hosted IDP. Docs for setting up a hosted IDP and remote SP can be found [here](https://backstage.forgerock.com/docs/idcloud-am/latest/saml2-guide/saml2-providers-and-cots.html). 
 
-Once it is created, get the IDP initiated url. It should look some like this: https://<am-url>/idpssoinit?metaAlias=<idp meta alias>&spEntityID=<sp entity id>
+Once it is created, you will be able to use an IDP initiated URL in this format should look like this: https://<am-url>/idpssoinit?metaAlias=(idp meta alias)&spEntityID=(sp entity id)
 
 In the google admin tenant, go to security -> authentication, SSO with third party IDP. Enable it, and copy the IDP initiated URL as the sign in URL.
 
