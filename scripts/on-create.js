@@ -40,12 +40,12 @@ function buildJwt(claims) {
   try {
   	var theBody2 = {
       "name": {
-        "familyName": "",
-        "givenName": ""
+        "familyName": object.sn,
+        "givenName": object.givenName
 
       },
-      "password": "",
-      "primaryEmail": ""
+      "password": object.password,
+      "primaryEmail": object.mail
 
     };
     
