@@ -1,6 +1,6 @@
 # Chrome
 
-Chrome OS allows managed users to login to their accounts ona a device level with their 3p IdP account. However, after the initial login, local user accounts are mostly decoupled from 3P IdP. This document proposes a tight coupling between 3P IdP as identity privder and Chrome OS as a clooud-based operating system.
+Chrome OS allows managed users to login to their accounts ona a device level with their 3p IdP account. 
 
 ## Setting up SAML
 
