@@ -27,13 +27,11 @@ function buildJwt(claims) {
   try{
      var theResponse = openidm.action('external/rest', 'call', theParams);
      access_token = theResponse.access_token;
-     logger.error("-----onCreate Script theResponse-----  " + theResponse);
   } catch(e) {
     logger.error("Exception during REST call: ");
     logger.error(e);
   }
   
-  logger.error("ACCESS TOKEN" + access_token);
   
   
   
@@ -65,7 +63,6 @@ function buildJwt(claims) {
     
 
     var theResponse = openidm.action('external/rest', 'call', theParams2);
-    logger.error("-----onCreate Script theResponse-----  " + theResponse);
     
     
   } catch (e) {
@@ -99,7 +96,6 @@ function generateJwtToken() {
 
 try {
   var theJWT = generateJwtToken();
-  console.log("Here's the JWT to use: " + theJWT);
 } catch (e) {
   console.log("Exception encountered");
   console.log("Exception: " + e);
