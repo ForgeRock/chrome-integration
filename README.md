@@ -1,10 +1,15 @@
 # Chrome
 
-Chrome OS allows managed users to login to their accounts ona a device level with their 3p IdP account. 
+Chrome OS allows managed users to login to their accounts on a device level with their 3p IdP account. 
 
 ## Setting up SAML
 
 
+## Setting up a service account
+
+A service account will need to be created and set up in google. Steps for that can be found here: https://support.google.com/a/answer/7378726?hl=en.
+
+After a service account is created and a key is added, a json file will be downloaded containing information about the service account. This information will need to be added as ESVs in the ForgeRock environment: https://backstage.forgerock.com/docs/idcloud/latest/tenants/esvs.html. 
 
 ## Automatic provision of usernames to google
 
