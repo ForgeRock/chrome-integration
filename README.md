@@ -28,6 +28,9 @@ Users can be automatically provisioned from ForgeRock to Google using the Google
 3) Under add script for managed events, select onCreate and click add script
 4) Copy and paste the script from scripts/on-create.js and click save
 
+   <img width="1301" alt="Screenshot 2023-06-20 at 9 27 38 AM" src="https://github.com/ForgeRock/chrome-integration/assets/94064355/826b3298-6de7-4cdf-97df-6e32d7a93a0a">
+
+
 ## Notify Chrome OS about password changes
 
 1) Navigate to the ForgeRock Identity Management console
