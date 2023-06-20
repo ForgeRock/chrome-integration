@@ -19,5 +19,5 @@ Users can be automatically provisioned from ForgeRock to Google using the Google
 
 1) Navigate to the ForgeRock Identity Management console
 2) Navigate to Managed Objects -> alpha_user -> scripts
-3) Under add script for managed events, select passwordUpdated and click add script
-4) Copy and paste the script from scripts/password-updated.js and click save
+3) Under add script for managed events, select onUpdate and click add script
+4) Copy and paste the script from scripts/updated-password.js and click save
