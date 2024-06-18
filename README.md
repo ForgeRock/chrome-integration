@@ -4,13 +4,15 @@ Chrome OS allows managed users to login to their accounts on a device level with
 
 ## Setting up SAML
 
-In the ForgeRock tenant, set up a hosted IDP. Docs for setting up a hosted IDP and remote SP can be found [here](https://backstage.forgerock.com/docs/idcloud-am/latest/saml2-guide/saml2-providers-and-cots.html). 
+In the ForgeRock tenant, set up a hosted IDP. Docs for setting up a hosted IDP can be found here [here](https://backstage.forgerock.com/docs/idcloud-am/latest/saml2-guide/saml2-providers-and-cots.html). 
 
-Once the IDP is setup, add the SP role to the IDP. Add the ACS to this.
+Create the remote SP as well. Use the attached XML as a template, and update the entity ID and ACS URLs.
 
-https://(ENVIRONMENT)/am/saml2/jsp/exportmetadata.jsp?entityid=(ENTITYID)&realm=/(REALM)
+Retrieve the certificate to upload from: https://(ENVIRONMENT)/am/saml2/jsp/exportmetadata.jsp?entityid=(ENTITYID)&realm=/(REALM)
 
-In the google admin tenant, go to security -> authentication, SSO with third party IDP. Enable it, and copy the IDP initiated URL as the sign in URL.
+In the google admin tenant, go to security -> authentication, SSO with third party IDP. Enable it, and copy the SSO sign in URL from the ForgeRock hosted IPD as the sign in URL.
+
+In the google admin tenant, upload the certificate from google IDP. 
 
 After setting up SAML, users can leverage authentication journeys in their flow. 
 
