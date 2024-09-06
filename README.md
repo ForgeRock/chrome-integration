@@ -7,6 +7,8 @@ Chrome OS allows managed users to login to their accounts on a device level with
 In the ForgeRock tenant, set up a hosted IDP. Docs for setting up a hosted IDP can be found here [here](https://backstage.forgerock.com/docs/idcloud-am/latest/saml2-guide/saml2-providers-and-cots.html). 
 
 Create the remote SP as well. Use the attached XML as a template, and update the entity ID and ACS URLs.
+- Sample ACS URL: https://accounts.google.com/samlrp/{}/acs
+- Sample entity ID: https://accounts.google.com/samlrp/{}
 
 Retrieve the certificate to upload from: https://(ENVIRONMENT)/am/saml2/jsp/exportmetadata.jsp?entityid=(ENTITYID)&realm=/(REALM)
 
