@@ -14,7 +14,7 @@ Retrieve the certificate to upload from: https://(ENVIRONMENT)/am/saml2/jsp/expo
 
 In the google admin tenant, go to security -> authentication, SSO with third party IDP. Enable it, and copy the SSO sign in URL from the ForgeRock hosted IPD as the sign in URL.
 
-In the google admin tenant, upload the certificate from google IDP. 
+In the google admin tenant, upload the certificate from ForgeRock IDP. 
 
 After setting up SAML, users can leverage authentication journeys in their flow. 
 
